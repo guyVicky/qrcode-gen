@@ -6,10 +6,13 @@ function createQR(s) {
   qr.addData(s);
   qr.make();
   opts = new Object();
-  opts.cellSize = 10;
+  opts.cellSize = 8;
   opts.margin = opts.cellSize * 4;
   opts.scalable = true;
-  document.getElementById("App").innerHTML = qr.createImgTag(opts.cellSize);
+  document.getElementById("qr-img").src = qr.createDataURL(
+    opts.cellSize,
+    opts.margin
+  );
 }
 
-createQR("hi");
+createQR("hello, world");

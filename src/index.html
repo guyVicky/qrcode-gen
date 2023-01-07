@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="./qrcode.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body class="min-h-screen min-w-screen bg-green-400">
+    <div id="App" class="mx-auto flex flex-col">
+      <img
+        src=""
+        id="qr-img"
+        class="mx-auto rounded-xl shadow-black drop-shadow-2xl"
+      />
+      <input
+        type="text"
+        class="mx-auto w-60"
+        placeholder="Enter your link here..."
+      />
+      <input
+        type="button"
+        class="mx-auto bg-green-500 text-white p-5 border-4 border-white rounded-full"
+        value="Generate"
+      />
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
