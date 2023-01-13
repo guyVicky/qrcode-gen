@@ -15,4 +15,9 @@ function createQR(s) {
   );
 }
 
+document.getElementById("submit").addEventListener("click", (e) => {
+  let str = document.getElementById("string").value;
+  createQR(str);
+});
+
 createQR("hello, world");
